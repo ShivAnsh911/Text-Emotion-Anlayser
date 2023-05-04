@@ -19,7 +19,7 @@ lottie_animation=load_lottieURL("https://assets10.lottiefiles.com/packages/lf20_
 
 #load model from pkl file
 import joblib 
-emo_model = joblib.load(open("model\emotion_analyzer.pkl","rb"))
+emo_model = joblib.load(open(".\model\emotion_analyzer.pkl","rb"))
 
 def predict_emotions(docx):
 	results = emo_model.predict([docx])
